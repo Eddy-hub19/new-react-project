@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import defaultImage from '../logo.svg';
 export default function Painting({
   imageUrl = defaultImage,
@@ -5,6 +6,7 @@ export default function Painting({
   profileUrl,
   author = 'underfined',
   price,
+  quantity,
 }) {
   return (
     <div>
@@ -14,8 +16,17 @@ export default function Painting({
         Aвтор: <a href={profileUrl}>{author}</a>
       </p>
       <p>Цена: {price} кредитов</p>
-      <p>Доступность: заканчивается или есть в наличии</p>
+      <p>Доступность: {quantity < 10 ? 'заканчивается' : 'есть в наличии'}</p>
       <button type="button">Добавить в корзину</button>
     </div>
   );
 }
+
+Painting.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  profileUrl: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
+};

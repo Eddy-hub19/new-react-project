@@ -1,0 +1,11 @@
+.header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 19px;
+  font-variant: normal;
+  color: orange;
+  text-align: center;
+}
