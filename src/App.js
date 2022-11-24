@@ -1,4 +1,4 @@
-import PaintingList from './components/PaintingList';
+import PaintingList from 'components/Painting/PaintingList';
 import Section from './components/Section';
 import { painting } from './index';
 

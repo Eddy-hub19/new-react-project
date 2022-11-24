@@ -1,13 +1,10 @@
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
+import { RecipeList } from './Recipe/RecipeList';
+import recipes from './recipes.json';
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <RecipeList recipes={recipes} />
     </>
   );
 }

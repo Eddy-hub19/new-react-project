@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Smoked salmon burger",
+    "time": "20",
+    "servings": 6,
+    "calories": 210,
+    "image": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Tomatoes With Creamy Feta",
+    "time": "20",
+    "servings": 6,
+    "calories": 210,
+    "image": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "name": "Spicy potato salad",
+    "time": "20",
+    "servings": 6,
+    "calories": 210,
+    "image": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Smoked salmon burger",
+    "time": "20",
+    "servings": 6,
+    "calories": 210,
+    "image": "",
+    "difficulty": "easy"
+  }
+]

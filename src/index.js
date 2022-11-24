@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
-import App from './App.js';
-import App2 from './components/App2';
+// import App from 'App';
+import App2 from 'components/App2';
 
 export const painting = [
   {
