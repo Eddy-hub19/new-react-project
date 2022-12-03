@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const Recipe = ({ recipe: { name, time, servings, calories } }) => {
   return (
     <div>
@@ -17,6 +18,15 @@ export const Recipe = ({ recipe: { name, time, servings, calories } }) => {
       </ul>
     </div>
   );
+};
+
+Recipe.propTypes = {
+  recipe: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    servings: PropTypes.number.isRequired,
+    calories: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 // recipe props - {}

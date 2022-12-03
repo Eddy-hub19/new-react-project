@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Recipe } from './Recipe';
 
-export const RecipeList = ({ recipes }) => {
+const RecipeList = ({ recipes }) => {
   return (
     <ul>
       {recipes.map(recipe => (
@@ -20,5 +20,7 @@ RecipeList.propTypes = {
     })
   ),
 };
+
+export default RecipeList;
 
 // recipes prop []

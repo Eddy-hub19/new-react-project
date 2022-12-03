@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
-// import App from 'App';
-import App2 from 'components/App2';
+import App from 'App';
+// import App2 from 'components/App2';
 
 export const painting = [
   {
@@ -38,5 +38,5 @@ export const painting = [
   },
 ];
 
-// ReactDOM.render(<App />, document.querySelector('#root'));
-ReactDOM.render(<App2 />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector('#root'));
+// ReactDOM.render(<App2 />, document.querySelector('#root'));

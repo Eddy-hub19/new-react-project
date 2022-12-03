@@ -1,0 +1,15 @@
+.Counter {
+  width: 300px;
+  height: 140px;
+  border: 1px solid;
+  background: #009688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CounterValue {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
