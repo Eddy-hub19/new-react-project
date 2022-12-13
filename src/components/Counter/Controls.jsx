@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Controls = ({ onIncrement, onDecrement }) => {
+const ControlsCounter = ({ onIncrement, onDecrement }) => {
   return (
     <div>
       <button tvpe="button" onClick={onIncrement}>
@@ -13,4 +13,4 @@ const Controls = ({ onIncrement, onDecrement }) => {
   );
 };
 
-export default Controls;
+export default ControlsCounter;

@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
-import App from 'App';
+// import App from 'App';
+import PokemonApp from './components/PokemonApp.jsx';
 // import App2 from 'components/App2';
 
 export const painting = [
@@ -38,5 +39,5 @@ export const painting = [
   },
 ];
 
-ReactDOM.render(<App />, document.querySelector('#root'));
-// ReactDOM.render(<App2 />, document.querySelector('#root'));
+// ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<PokemonApp />, document.querySelector('#root'));

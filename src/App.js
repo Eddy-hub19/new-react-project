@@ -1,6 +1,6 @@
-import SearchPic from 'components/SearchPic/SearchPic';
 import { Component } from 'react';
-import './components/SearchPic/styles.css';
+// import SearchPic from 'components/SearchPic/SearchPic';
+// import './components/SearchPic/styles.css';
 // import Section from './components/Section';
 // import Dropdown from 'components/Dropdown';
 
@@ -30,11 +30,14 @@ import './components/SearchPic/styles.css';
 <ImageGalleryItem>, <Loader>, 
 <Button> и <Modal>.  */
 
+import { Reader } from 'components/Reader/Reader';
+import publication from './components/Reader/publication.json';
+
 export default class App extends Component {
   render() {
     return (
       <>
-        <SearchPic />
+        <Reader items={publication} />
       </>
     );
   }
