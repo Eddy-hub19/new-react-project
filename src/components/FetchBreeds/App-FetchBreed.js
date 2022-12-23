@@ -3,8 +3,7 @@ import { fetchDogByBreed } from './BreedSelect/api';
 import { BreedSelect } from './BreedSelect/BreedSelect';
 import { Dog } from './BreedSelect/Dog';
 
-
-export class App extends Component {
+export default class AppFetchBreed extends Component {
   state = {
     dog: null,
     isLoading: false,
@@ -32,7 +31,7 @@ export class App extends Component {
       <>
         <BreedSelect onSelect={this.selectBreed} />
 
-        {dog && !isLoading && <Dog dog={dog}/>}
+        {dog && !isLoading && <Dog dog={dog} />}
 
         {error && <p style={{ color: 'red' }}>{error}</p>}
         {isLoading && <div>LOADING...</div>}

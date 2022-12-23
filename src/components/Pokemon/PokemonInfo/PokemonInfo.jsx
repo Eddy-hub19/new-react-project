@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-export default class PookemonInfo extends Component {
+export default class PokemonInfo extends Component {
   state = {
     pokemon: null,
     loading: false,

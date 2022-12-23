@@ -1,3 +1,5 @@
+// import ColorPicker from 'components/ColorPicker';
+import { PokemonAppHook } from 'components/Pokemon/PokemonHook';
 import { Component } from 'react';
 // import SearchPic from 'components/SearchPic/SearchPic';
 // import './components/SearchPic/styles.css';
@@ -23,21 +25,19 @@ import { Component } from 'react';
 /* <Section title="Топ недели"><PaintingList items={painting} /></Section>  */
 /* <RecipeList recipes={recipes} /> */
 /* <Counter initialValue={10} /> */
+
+//  ColorPicker //
 /* <ColorPicker options={options} /> */
 
-// Создай компоненты
-/* <Searchbar>, <ImageGallery>, 
-<ImageGalleryItem>, <Loader>, 
-<Button> и <Modal>.  */
-
-import { Reader } from 'components/Reader/Reader';
-import publication from './components/Reader/publication.json';
+// import { Reader } from 'components/Reader/Reader';
+// import publication from './components/Reader/publication.json';
+/* <Reader items={publication} /> */
 
 export default class App extends Component {
   render() {
     return (
       <>
-        <Reader items={publication} />
+        <PokemonAppHook />
       </>
     );
   }

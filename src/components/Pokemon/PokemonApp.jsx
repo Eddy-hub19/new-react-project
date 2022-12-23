@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PokemonForm from './Pokemon/PokemonForm/PokemonForm';
-import PookemonInfo from './Pokemon/PokemonInfo/PokemonInfo';
+import PokemonForm from './PokemonForm/PokemonForm';
+import PookemonInfo from './PokemonInfo/PokemonInfo';
 
 export default class PokemonApp extends Component {
   state = {
