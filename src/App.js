@@ -1,5 +1,6 @@
 // import ColorPicker from 'components/ColorPicker';
-import { PokemonAppHook } from 'components/Pokemon/PokemonHook';
+// import { Router } from 'components/ROUTER/App';
+import { Layout } from 'components/ROUTER/Layout';
 import { Component } from 'react';
 // import SearchPic from 'components/SearchPic/SearchPic';
 // import './components/SearchPic/styles.css';
@@ -33,11 +34,21 @@ import { Component } from 'react';
 // import publication from './components/Reader/publication.json';
 /* <Reader items={publication} /> */
 
+import { Route, Routes } from 'react-router-dom';
+
 export default class App extends Component {
   render() {
     return (
       <>
-        <PokemonAppHook />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="dashboard" element={<div>Dashboard</div>} />
+            <Route path="sales" element={<div>Sales</div>} />
+            <Route path="reports" element={<div>Reports</div>} />
+            <Route path="feedback" element={<div>Feedback</div>} />
+            <Route path="customers" element={<div>Customers</div>} />
+          </Route>
+        </Routes>
       </>
     );
   }
